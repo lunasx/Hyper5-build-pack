@@ -1,0 +1,99 @@
+{
+  "_from": "ms@3.0.0-canary.1",
+  "_id": "ms@3.0.0-canary.1",
+  "_inBundle": false,
+  "_integrity": "sha512-kh8ARjh8rMN7Du2igDRO9QJnqCb2xYTJxyQYK7vJJS4TvLLmsbyhiKpSW+t+y26gyOyMd0riphX0GeWKU3ky5g==",
+  "_location": "/ms",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ms@3.0.0-canary.1",
+    "name": "ms",
+    "escapedName": "ms",
+    "rawSpec": "3.0.0-canary.1",
+    "saveSpec": null,
+    "fetchSpec": "3.0.0-canary.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ms/-/ms-3.0.0-canary.1.tgz",
+  "_shasum": "c7b34fbce381492fd0b345d1cf56e14d67b77b80",
+  "_spec": "ms@3.0.0-canary.1",
+  "_where": "C:\\Users\\serka\\Desktop\\Bot",
+  "bugs": {
+    "url": "https://github.com/vercel/ms/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Tiny millisecond conversion utility",
+  "devDependencies": {
+    "@types/jest": "27.0.1",
+    "@typescript-eslint/eslint-plugin": "4.31.0",
+    "@typescript-eslint/parser": "4.31.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-jest": "24.4.0",
+    "eslint-plugin-tsdoc": "0.2.14",
+    "husky": "7.0.2",
+    "jest": "27.1.1",
+    "lint-staged": "11.1.2",
+    "prettier": "2.4.0",
+    "ts-jest": "27.0.5",
+    "typescript": "4.4.2"
+  },
+  "engines": {
+    "node": ">=12.13"
+  },
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/vercel/ms#readme",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*": [
+      "prettier --ignore-unknown --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --max-warnings=0 --fix"
+    ]
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "name": "ms",
+  "prettier": {
+    "endOfLine": "lf",
+    "tabWidth": 2,
+    "printWidth": 80,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vercel/ms.git"
+  },
+  "scripts": {
+    "build": "scripts/build.js",
+    "eslint-check": "eslint --max-warnings=0 .",
+    "precommit": "lint-staged",
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build",
+    "prettier-check": "prettier --check .",
+    "test": "jest",
+    "type-check": "tsc --noEmit"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "version": "3.0.0-canary.1"
+}
